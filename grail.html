@@ -3,29 +3,56 @@
     <head>
         <meta charset="utf-8">
         <title></title>
-        <style>
-        body {margin: 0;}
-        #left {
-            position: absolute;
-            width: 20%;
-            height: 100%;
-            background-color: blue;
-        }
-        #right {
-            position: absolute;
-            left: 20%;
-            width: 80%;
-            height: 100%;
-            background-color: red;
-            overflow: auto;
-        }
+        <style media="screen">
+            body {margin: 0;}
+
+            #header {
+                height: 10%;
+                width: 100%;
+                background-color: black;
+                position: absolute;
+            }
+            #footer {
+                height: 10%;
+                width: 100%;
+                background-color: black;
+                position: absolute;
+                top: 90%;
+            }
+            #left {
+                height: 80%;
+                width: 20%;
+                background-color: blue;
+                position: absolute;
+                top: 10%;
+            }
+            #right {
+                height: 80%;
+                width: 20%;
+                background-color: red;
+                position: absolute;
+                top: 10%;
+                left: 80%;
+            }
+            #content {
+                height: 80%;
+                width: 60%;
+                background-color: yellow;
+                position: absolute;
+                top: 10%;
+                left: 20%;
+                overflow: auto;
+            }
         </style>
     </head>
     <body>
-        <div id="left">
+        <div id="header">
 
         </div>
-        <div id="right">
+        <div id="footer">
+
+        </div>
+        <div id="content">
             <h1>Lorem ipsum dolor sit amet consectetuer adipiscing
             elit</h1>
 
@@ -150,6 +177,11 @@
             ultricies nec, pellentesque eu, pretium quis, sem.</p>
 
         </div>
+        <div id="right">
 
+        </div>
+        <div id="left">
+
+        </div>
     </body>
 </html>
